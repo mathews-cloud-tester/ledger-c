@@ -4,6 +4,10 @@ export function region(): string {
   return value;
 }
 
+export function regionOrDefault(fallback = "unset"): string {
+  return process.env.LEDGER_REGION ?? fallback;
+}
+
 export function timeoutMs(): number {
   const raw = process.env.LEDGER_TIMEOUT_MS;
   const parsed = raw === undefined ? 5000 : Number(raw);
