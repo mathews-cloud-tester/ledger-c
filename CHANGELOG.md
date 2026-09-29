@@ -2,6 +2,8 @@
 
 ## Unreleased
 
+- Renamed the `Ledger` type to `Book` and `openLedger` to `openBook` across the services layer (`src/ledger/`, `src/services/`); part of a 3-PR rename (models/services/API).
+
 ## 0.4.1
 
 - Settlement retries once when the region service times out.
